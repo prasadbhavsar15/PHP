@@ -1,28 +1,33 @@
 <?php
-    class cat
-    {
-        public $weight;
-        public $maxspeed;
-        function eat()
-        {
-            echo"Eating <br>";
-        }
-        function sleep()
-        {
-            echo "sleeping <br>";
-        }
+class Cat {
+    public $weight;
+    public $maxspeed;
+
+    public function eat($weight, $maxspeed) {
+        $this->weight = $weight;
+        $this->maxspeed = $maxspeed;
+        echo "Eating<br>";
     }
-    class Lion extends cat{
-        public $manelenght;
-        function roar()
-        {
-            echo "Roarrrrrrr<br>";
-        }
+
+    public function sleep() {
+        echo "Sleeping<br>";
     }
-$objLion= new Lion();
-$objLion->weight;
-$objLion->manelenght;
-$objLion->eat();
+}
+
+class Lion extends Cat {
+    public $manelength;
+
+    public function roar() {
+        echo "Roarrrrrrr<br>";
+        echo "Weight: " . $this->weight . "<br>";
+        echo "Max speed: " . $this->maxspeed . "<br>";
+        echo "Mane length: " . $this->manelength . "<br>";
+    }
+}
+
+$objLion = new Lion();
+$objLion->eat(200, 50);
+$objLion->manelength = 36;
 $objLion->roar();
 $objLion->sleep();
 ?>
