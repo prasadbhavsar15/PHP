@@ -11,5 +11,4 @@
         }
     }
 $obj =new test();
-http://3.111.196.222/google
 ?>

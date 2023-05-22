@@ -1,3 +1,4 @@
+<html>
 <?php
     $img=imagecreate(500,300);
     $bgcolor=imagecolorallocate($img,150,200,180);
@@ -10,3 +11,4 @@
     imagepng($img);
     imagedestroy($img);
 ?>
+</html>

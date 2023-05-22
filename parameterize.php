@@ -12,8 +12,8 @@
     }
 public function printvalues()
     {
-        echo"num1 :".$this->num1 ."<br>";
-        echo"num2:".$this->num2 ."<br>";
+        echo"num1 : ".$this->num1 ."<br>";
+        echo"num2 : ".$this->num2 ."<br>";
     }
 }
 $s=new simple(10,20);
